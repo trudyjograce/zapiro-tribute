@@ -72,11 +72,9 @@ article p {
     color: #020202;
 }
 article img {
-  align: right
     border-radius: 8px;
     box-shadow: grey;
     height:100px;
-    align: right;
     padding: inherit;
     word-wrap: none;
     }
