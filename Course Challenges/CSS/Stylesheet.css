@@ -5,40 +5,48 @@
     background-image: url(/HTML/Images/Theme\ nordwood-unsplash.jpg);
     padding: 6px;
 }
+/* Header/Logo Title */
 .header {
-  padding: 5px;
-  text-align: auto;
+  padding: 70px;
+  width:70%;
+  align-items: right;
+  height:350;
   border-block-style: thick-border-bottom ;
-  border-bottom-color:#ba202e;
+  border-bottom-color: #ba202e;
 }
-.block{
-    width:100%;
-    height: 80px;
-}
+
 #logo{
   width: 30%;
   align-items: left;
+  height:350;
 }
-.h1 {color: #000000;
-    font-family: url(/HTML/Fonts/PermanentMarker-Regular.ttf)
+  
+header h1 {
+  color: #000000;
+    font-family: url(/HTML/Fonts/PermanentMarker-Regular.ttf);
     font-size 60px;
 }
-.h2{
+header h2{
     font-family: AmaticSC-Regular;
     color: #ba202e;
-font-size:30px;
+    font-size: 30;
 }
-.p {
+header h3{
+  font-family: AmaticSC-Regular;
+  color: #ba202e;
+font: size 20;
+}
+p {
     font: OpenSansCondensed-Light;
     font-size: 12px;
     color: #020202;
 }
-img {
+.img {
     border-radius: 8px;
     box-shadow: grey;
   }
 /* Thumbnail for Links*/
-.img {
+aside .img {
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
@@ -47,13 +55,6 @@ img {
   img:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
   }
-  
-  <a href="paris.jpg">
-    <img src="paris.jpg" alt="Paris">
-  </a>
-.section{
-
-}
 aside .ul {
         list-style-image: url('C:\Users\Sunshine\Desktop\Codespace\final_submission\Images/Cartooning-for-Peace-1024x1024.png');
         list-style-image: url('C:\Users\Sunshine\Desktop\Codespace\final_submission\Images/bookshop.png');
@@ -162,7 +163,6 @@ aside .ul {
     margin: 4px 2px;
     cursor: pointer;
     }
-Use of images and image style
 
 /*Forms*/
 input[type=text] {
@@ -171,3 +171,12 @@ input[type=text] {
     margin: 8px 0;
     box-sizing: border-box;
   }
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+ }
