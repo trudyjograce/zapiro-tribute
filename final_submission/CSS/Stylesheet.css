@@ -8,9 +8,9 @@
 }
 header {
   height: 400px;
-  width:100%;
   border-bottom: 2px solid;
   border-color: #ba202e;
+  position: sticky;
 }
 /* Header/Logo Title */
 
@@ -35,6 +35,7 @@ header h2{
   font-family: 'Amatic SC', cursive;
     color: #ba202e;
     font-size: 5em;
+    text-align: right;
 }
 header h3{
   font-family: 'Amatic SC', cursive;
@@ -42,12 +43,11 @@ header h3{
   font-size:  3em;
   display: block;
 }
-section{
-  height:1500px;
-  width: 70%;
-  box-align: left;
-  border-block: 1px;
-  border-block-color: blue;
+  section{
+    width: 80%;
+    background-image: url(/Images/Theme\ nordwood.jpg);
+    border-bottom: #ba202e;
+    height:900px
 }
 section h2{
   top: 15px;
@@ -59,8 +59,11 @@ article {
   display:block;
   height:800px;
   width: 85%;
+  border-block: solid;
+  border-block-color: blue;
 }
 article p {
+  display: inline;
   font-family: 'Open Sans Condensed', sans-serif;
     font-size:14px;
     color: #020202;
@@ -75,14 +78,15 @@ article img {
     padding: 10px; 
     }
 article li{
-  display: inline-flexbox;
+  list-style-type: none;
+  display: inline-block;
   align-items:right;
 }
   /*aside container*/
 .sidenav {
   height: 79%;
   width: 20%;
-  position: fixed;
+  position:fixed;
   z-index: 1;
   top: 0;
   right: 0;
@@ -90,13 +94,11 @@ article li{
   overflow-x: hidden;
   padding-top: 20px;
 }
-
 .main {
   margin-left: 160px; /* Same as the width of the sidenav */
   font-size: 28px; /* Increased text to enable scrolling */
   padding: 0px 10px;
 }
-
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
@@ -229,12 +231,6 @@ input[type=text]
     background-image: url(/HTML/Images/Theme\ nordwood-unsplash.jpg);
     padding: 6px;
 }
-.block{
-    color: #fcfcfc;
-    pattern: guaze;
-    width:100%;
-    height: 80px;
-}
 .h1 {color: #000000;
     font:PermanentMarker-Regular;
     font-size: 60px;
@@ -263,11 +259,6 @@ img {
   img:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
   }
-  
-  <a href="paris.jpg">
-    <img src="paris.jpg" alt="Paris">
-  </a>
-.section{
 
 }
 aside .ul {
