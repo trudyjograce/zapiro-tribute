@@ -44,24 +44,24 @@ header h2{
 header h3{
   font-family: 'Amatic SC', cursive;
   color: #ba202e;
-  font-size:  1em;
+  font-size:0.7em;
   display: block;
 }
   section{
-    width: 80%;
+    width: 90%;
     background-image: url(/Images/Theme\ nordwood.jpg);
     border-bottom: #ba202e;
-    height:400px
+    height:300px
 }
  h2{
   font-family: 'Amatic SC', cursive;
     color: #ba202e;
-    font-size: 2em;
+    font-size: 1em;
 }
 article {
   display:block;
-  height:200px;
-  width: 80%;
+  height:180px;
+  width: 75%;
   display: inline-block;
 }
 article p {
@@ -71,11 +71,11 @@ article p {
     text-align: left;
 }
 article img {
-  align-items:right;
-    border-radius: 8px;
+    border-radius: 5px;
     box-shadow: grey;
-    height:100px;
-    padding: 1px; 
+    height:120px;
+    padding: 1px;
+    float: right; 
     }
 article li{
   list-style-type: none;
@@ -83,13 +83,13 @@ article li{
 }
   /*aside container*/
 .sidenav {
-  height: 65%;
-  width: 20%;
+  height: 100%;
+  width: 25%;
   position:fixed;
   z-index: 1;
   top:150px;
   right: 0;
-  background-image: url(/Images/Theme\ nordwood.jpg);  
+  background-image: url(/Images/Theme\ nordwood.jpg)  
   overflow-x: hidden;
   padding-top: 1px;
  
@@ -190,7 +190,7 @@ blockquote {
         }        
 footer {
     clear: both;
-    position: fixed;
+    position: bottom;
     left: 0;
     bottom:0;
     width: 100%;
