@@ -5,39 +5,41 @@
     padding: 5px;
     background-image: url(/Images/Theme\ nordwood.jpg);
 }
-.header {
-  height: 160px;
+header {
+  height: 400px;
   width:100%;
   border-bottom: 2px solid;
   border-color: #ba202e;
 }
 /* Header/Logo Title */
-Header img {
-  top: 1px;
-  float: left;
-  width: 145px;
-  height: 145px;
-  background: #555;
+
+Header ul{
+  list-style-type: none;
+  top: 0px;
+  display: inline-block;
+}
+header li{
+  display: inline-block;
+  padding: 40px;
 }
 header h1 {
-  text-align: left;
-  top: 1px;
+  top: 0px;
   color: #000000;
   font-family: 'Permanent Marker', cursive;
-  font-size: 8em;
+  font-size: 12em;
   font-style: italic;
+  text-align: center;
 }
 header h2{
-  float: right;
   font-family: 'Amatic SC', cursive;
     color: #ba202e;
-    font-size: 2em;
+    font-size: 5em;
 }
 header h3{
-  float: right;
   font-family: 'Amatic SC', cursive;
   color: #ba202e;
-  font-size:  1em;
+  font-size:  3em;
+  display: block;
 }
 section{
   height:1500px;
@@ -54,7 +56,7 @@ section h2{
 }
 article {
   display:block;
-  height:1000px;
+  height:800px;
   width: 85%;
 }
 article p {
