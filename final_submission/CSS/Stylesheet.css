@@ -3,25 +3,29 @@
     margin:1px;
   border: 0.1px;
     border-radius: 3px;
-    padding: 5px;
+    padding: 1px;
     background-image: url(/Images/Theme\ nordwood.jpg);
 }
 header {
-  height: 400px;
+  width: 100%;
+  height: 350px;
   border-bottom: 2px solid;
   border-color: #ba202e;
-  position: sticky;
+  align-content: space-between;
 }
 /* Header/Logo Title */
+
 
 Header ul{
   list-style-type: none;
   top: 0px;
   display: inline-block;
+ 
 }
 header li{
   display: inline-block;
-  padding: 40px;
+  padding: 5px;
+  
 }
 header h1 {
   top: 0px;
@@ -29,13 +33,13 @@ header h1 {
   font-family: 'Permanent Marker', cursive;
   font-size: 12em;
   font-style: italic;
-  text-align: center;
+  align: center;
 }
 header h2{
   font-family: 'Amatic SC', cursive;
     color: #ba202e;
     font-size: 5em;
-    text-align: right;
+    align: right;
 }
 header h3{
   font-family: 'Amatic SC', cursive;
@@ -49,8 +53,8 @@ header h3{
     border-bottom: #ba202e;
     height:900px
 }
-section h2{
-  top: 15px;
+ h2{
+ 
   font-family: 'Amatic SC', cursive;
     color: #ba202e;
     font-size: 5em;
@@ -58,19 +62,16 @@ section h2{
 article {
   display:block;
   height:800px;
-  width: 85%;
-  border-block: solid;
-  border-block-color: blue;
+  width: 80%;
+  display: inline-block;
 }
 article p {
-  display: inline;
   font-family: 'Open Sans Condensed', sans-serif;
     font-size:14px;
     color: #020202;
     text-align: left;
 }
 article img {
-  display: inline-flexbox;
   align-items:right;
     border-radius: 8px;
     box-shadow: grey;
@@ -80,53 +81,47 @@ article img {
 article li{
   list-style-type: none;
   display: inline-block;
-  align-items:right;
 }
   /*aside container*/
 .sidenav {
-  height: 79%;
+  height: 65%;
   width: 20%;
   position:fixed;
   z-index: 1;
-  top: 0;
+  top:500px;
   right: 0;
   background-image: url(/Images/Theme\ nordwood.jpg);  
   overflow-x: hidden;
   padding-top: 20px;
 }
-.main {
-  margin-left: 160px; /* Same as the width of the sidenav */
-  font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
-}
+
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
 /* Thumbnail for Links*/
 sidenav li {
+  list-style-type: none;
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
     width: 150px;
     float: center;
+    font-size: 2em;
   }
   img:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
   }
-aside .ul {
-  list-style-type: none;
-        list-style-image: url('C:\Users\Sunshine\Desktop\Codespace\final_submission\Images/Cartooning-for-Peace-1024x1024.png');
-        list-style-image: url('C:\Users\Sunshine\Desktop\Codespace\final_submission\Images/bookshop.png');
-      }
-/*BLock Quote for Donation Page*/
 
+/*BLock Quote for Donation Page*/
 blockquote {
         display: block;
         margin-top: 5px;
         margin-bottom: 5px;
         margin-left: 5px;
         margin-right: 5px;
+        font-size: 2em;
+        padding: 1px;
       }
 /*Slider*/
       .slider-holder
@@ -202,8 +197,8 @@ footer {
     width: 100%;
     height:400px;
     background-image: url(/Images/yellow.jpg);
-    border-top: 5px;
-    border-color:#ba202e;
+    border-top: 2px solid;
+    border-color: #ba202e;
     text-align: center;
  }
  footer ul {
