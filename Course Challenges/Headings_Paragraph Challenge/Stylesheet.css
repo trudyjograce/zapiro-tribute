@@ -1,0 +1,27 @@
+/*Challenge
+Create a web page using the heading tags and paragraph tags only
+Add page background color
+Add a heading (<h1>) for your page
+Add color to headings (<h2>, <h3>, etc.) after completing 5 paragraphs (the headings must be the first three words in the next paragraph)
+Add a different font style to paragraphs (<p>), as you see them on the article*/
+
+body {
+    background-color: powderblue;
+}
+h2,h3,h4{
+    color: palevioletred;
+}
+section p{
+    font-family: 'Courier New';
+    font-size: 12px;
+}
+article p {
+    font-family:Georgia;
+    font-size: 15px;
+    font-style: italic;
+}
+footer p{
+    font-family: Arial;
+    font-size: 12px;
+    font-style: normal;
+}
