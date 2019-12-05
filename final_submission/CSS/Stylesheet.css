@@ -1,11 +1,21 @@
-<<<<<<< HEAD
-.Body{ 
-    margin:1px;
-  border: 0.1px;
-    border-radius: 3px;
-    padding: 1px;
-    background-image: url(/Images/Theme\ nordwood.jpg);
+/* Layout */
+
+nav {
+  float: left;
+  width: 20%;
 }
+
+header, section, aside, nav, footer {
+  padding: 10px;
+}
+
+body{
+  margin: left 1px;
+  border: 1px;
+  border-radius: 3px;
+  padding: 1px;
+}
+/* Header/Logo Title */
 header {
   display: block;
   width: 100%;
@@ -14,9 +24,6 @@ header {
   border-color: #ba202e;
   align-content: stretch;
 }
-/* Header/Logo Title */
-
-
 Header ul{
   list-style-type: none;
   top: 0px;
@@ -33,13 +40,13 @@ header h1 {
   font-family: 'Permanent Marker', cursive;
   font-size: 4em;
   font-style: italic;
-  align: center;
+  text-align: center;
 }
 header h2{
   font-family: 'Amatic SC', cursive;
     color: #ba202e;
     font-size: 2em;
-    align: right;
+    text-align: right;
 }
 header h3{
   font-family: 'Amatic SC', cursive;
@@ -47,22 +54,23 @@ header h3{
   font-size:0.7em;
   display: block;
 }
-  section{
-    width: 90%;
-    background-image: url(/Images/Theme\ nordwood.jpg);
-    border-bottom: #ba202e;
-    height:300px
-}
+
  h2{
   font-family: 'Amatic SC', cursive;
     color: #ba202e;
     font-size: 1em;
 }
+section{
+  width: 70%;
+  background-image: url('/Images/Theme\ nordwood.jpg');
+  border-bottom: #ba202e;
+  height:300px;
+  float:left;
+}
 article {
-  display:block;
-  height:180px;
-  width: 75%;
-  display: inline-block;
+  height:200px;
+  width: 68%;
+  float: left;
 }
 article p {
   font-family: 'Open Sans Condensed', sans-serif;
@@ -70,10 +78,10 @@ article p {
     color: #020202;
     text-align: left;
 }
-article img {
+img {
     border-radius: 5px;
     box-shadow: grey;
-    height:120px;
+    height:100px;
     padding: 1px;
     float: right; 
     }
@@ -82,39 +90,24 @@ article li{
   display: inline-block;
 }
   /*aside container*/
-.sidenav {
+aside {
+  float: right;
   height: 100%;
   width: 25%;
-  position:fixed;
-  z-index: 1;
-  top:150px;
-  right: 0;
-  background-image: url(/Images/Theme\ nordwood.jpg)  
-  overflow-x: hidden;
+  top:50px;
+  background-image: url("/Images/yellow.jpg");
+  overflow: hidden;
   padding-top: 1px;
- 
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
 /* Thumbnail for Links*/
-
 }
-.sidenav ul 
-{
+aside ul {
   list-style-type: none;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 2px;
-    align: center;
-    font-size: 1em;
   }
-
 /*BLock Quote for Donation Page*/
 blockquote {
         display: block;
-        margin-top: 1px;
+        margin-top: 0px;
         margin-bottom: 1px;
         margin-left: 1px;
         margin-right: 1px;
@@ -122,11 +115,28 @@ blockquote {
         font-style: italic;
         padding: 1px;
       }
-/*Slider*/
-      .slider-holder
-        {
+footer {
+    clear: both;
+    position: bottom;
+    left: 0;
+    bottom:1px;
+    width: 100%;
+    height:50px;
+    border-top: 2px solid;
+    border-color: #ba202e;
+    text-align: center;
+ }
+ footer ul {
+  list-style-type:none;
+  margin: 1px;
+
+}
+
+
+/*slider
+      .slider-holder{
             width: 100%;
-            height: 120px;
+            height: 100px;
             background-image:image;
             margin-left: auto;
             margin-right: auto;
@@ -134,14 +144,12 @@ blockquote {
             text-align: center;
             overflow: hidden;
         }
-       
-        .image-holder
-        {
+        .image-holder{
             width: 80%;
             background-color: rgb(230, 225, 225);
             margin-top:1px;
             margin-bottom: 1px;
-            height: 100px;
+            height: 98px;
             clear: both;
             position: relative;
             -webkit-transition: left 2s;
@@ -153,9 +161,8 @@ blockquote {
         .slider-image
         {
             float: center;
-            margin: 10px;
+            margin: 5px;
             padding: 1px;
-            position: relative;
         }
        
         #slider-image-1:target ~ .image-holder
@@ -168,8 +175,7 @@ blockquote {
             left: -800px;
         }
        
-        #slider-image-3:target ~ .image-holder
-        {
+       {
             left: -1600px;
         }
        
@@ -178,7 +184,6 @@ blockquote {
             position: relative;
             top:10px;
         }
-       
         .slider-change
         {
             display: inline-block;
@@ -187,30 +192,7 @@ blockquote {
             width: 10px;
             border-radius: 5px;
             background-color: brown;
-        }        
-footer {
-    clear: both;
-    position: bottom;
-    left: 0;
-    bottom:0;
-    width: 100%;
-    height:100px;
-    background-image: url(/Images/yellow.jpg);
-    border-top: 2px solid;
-    border-color: #ba202e;
-    text-align: center;
- }
- footer ul {
-  list-style-type:none;
-  margin: 1px;
-  padding: 50px;
-}
-footer li{
-  display: inline;
-  padding: 50px;
-  box-shadow: #555;
-
-}
+        }  
  /*Forms*/
 input[type=text] 
 {
@@ -218,113 +200,4 @@ input[type=text]
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-=======
-.Body{ 
-    border: 1px, solid #e6e6e6;
-    border-radius: 3px;
-    background-image: url(/HTML/Images/Theme\ nordwood-unsplash.jpg);
-    padding: 6px;
-}
-.h1 {color: #000000;
-    font:PermanentMarker-Regular;
-    font-size: 60px;
-}
-.h2{
-    font:AmaticSC-Regular;
-    color: #ba202e;
-font-size:30px;
-}
-.p {
-    font: OpenSansCondensed-Light;
-    font-size: 12px;
-    font-color: #020202;
-}
-img {
-    border-radius: 8px;
-    box-shadow: grey;
-  }
-/* Thumbnail for Links*/
-.img {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    width: 150px;
-  }
-  img:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-  }
-
-}
-aside .ul {
-        list-style-image: url('C:\Users\Sunshine\Desktop\Codespace\final_submission\Images/Cartooning-for-Peace-1024x1024.png');
-        list-style-image: url('C:\Users\Sunshine\Desktop\Codespace\final_submission\Images/bookshop.png');
-      }
-/*BLock Quote for Donation Page*/
-.blockquote {
-        display: block;
-        margin-top: 1em;
-        margin-bottom: 1em;
-        margin-left: 40px;
-        margin-right: 40px;
-      }
-
-/* Slideshow container */
-    .slideshow-container {
-      max-width: 100%;
-      position: relative;
-      margin: auto;
-    }
-    
-/* Hide the images by default */
-    .mySlides {
-      display: none;
-    }
-    
-/* Next & previous buttons */
-    .prev, .next {
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      width: auto;
-      margin-top: -22px;
-      padding: 16px;
-      color: white;
-      font-weight: bold;
-      font-size: 18px;
-      transition: 0.6s ease;
-      border-radius: 0 3px 3px 0;
-      user-select: none;
-    }
-    
-    /* Position the "next button" to the right */
-    .next {
-      right: 0;
-      border-radius: 3px 0 0 3px;
-    }
-    
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover, .next:hover {
-      background-color: rgba(0,0,0,0.8);
-    }
-.button {
-    background-color: #1c87c9;
-    border: none;
-    color: white;
-    padding: 20px 34px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    margin: 4px 2px;
-    cursor: pointer;
-    }
-Use of images and image style
-
-/*Forms*/
-input[type=text] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
->>>>>>> f27efe2c1aae585ece311ad62f6fbce474ed0d09
   }
