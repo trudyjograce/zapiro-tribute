@@ -18,16 +18,16 @@ header {
 }
 
 #logo {
-  display:inline-block;
+  display: inline-block;
   width: 30%;
 }
 
 .pageName {
   color: #ba202e;
-  
+  font-family: 'Ubuntu', sans-serif;
+  font-style: italic;
   text-align: right;
   display:inline-block;
-  float: right;
 } 
 
 .pageName ul{
@@ -37,8 +37,10 @@ header {
 .pageName h1{
   color: #003333;
   font-family:'Permanent Marker', cursive;
-
+  font-size: 30px;
+  text-align:left;
 }
+
 /*Side Navbar*/
 /*aside container*/
 
@@ -77,7 +79,7 @@ span {
 
 /*Main Section*/
 section{
-  width: 75%;
+  width: 70%;
   background-color: mediumorchid;
   border-bottom: #ba202e;
   position: absolute;
@@ -94,12 +96,11 @@ article p {
     font-size: 14px;
     color: #020202;
     text-align: left;
-    width:70%;
+    width:65%;
     display: inline-block;
 }
 #art_img{
   display: inline;
-  width:10%;
 }
 
 /*Slideshow*/
