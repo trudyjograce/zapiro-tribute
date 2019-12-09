@@ -1,198 +1,163 @@
 /* Layout */
-
-nav {
-  float: left;
-  width: 20%;
-}
-
-header, section, aside, nav, footer {
-  padding: 10px;
+section, aside, nav {
+  padding: 5px;
 }
 
 body{
-  margin: left 1px;
+  margin: 0;
   border: 1px;
-  border-radius: 3px;
   padding: 1px;
 }
-/* Header/Logo Title */
+
+/* Header/Logo/Title */
 header {
-  display: block;
-  width: 100%;
-  height: 150px;
   border-bottom: 2px solid;
   border-color: #ba202e;
-  align-content: stretch;
+  padding: 5px 10px;
+  height: 150px;
 }
-Header ul{
-  list-style-type: none;
-  top: 0px;
-  display: inline-block;
+
+#logo {
+  display:inline-block;
+  width: 30%;
 }
-header li{
-  display: inline-block;
-  padding: 2px;
+
+.pageName {
+  color: #ba202e;
+  
+  text-align: right;
+  display:inline-block;
+  float: right;
 } 
 
-header h1 {
-  top: 0px;
-  color: #000000;
-  font-family: 'Permanent Marker', cursive;
-  font-size: 4em;
-  font-style: italic;
-  text-align: center;
-}
-header h2{
-  font-family: 'Amatic SC', cursive;
-    color: #ba202e;
-    font-size: 2em;
-    text-align: right;
-}
-header h3{
-  font-family: 'Amatic SC', cursive;
-  color: #ba202e;
-  font-size:0.7em;
-  display: block;
-}
-
- h2{
-  font-family: 'Amatic SC', cursive;
-    color: #ba202e;
-    font-size: 1em;
-}
-section{
-  width: 70%;
-  background-image: url('/Images/Theme\ nordwood.jpg');
-  border-bottom: #ba202e;
-  height:300px;
-  float:left;
-}
-article {
-  height:200px;
-  width: 68%;
-  float: left;
-}
-article p {
-  font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 1em;
-    color: #020202;
-    text-align: left;
-}
-img {
-    border-radius: 5px;
-    box-shadow: grey;
-    height:100px;
-    padding: 1px;
-    float: right; 
-    }
-article li{
+.pageName ul{
   list-style-type: none;
-  display: inline-block;
 }
-  /*aside container*/
-aside {
-  float: right;
-  height: 100%;
-  width: 25%;
-  top:50px;
-  background-image: url("/Images/yellow.jpg");
-  overflow: hidden;
-  padding-top: 1px;
 
-/* Thumbnail for Links*/
+.pageName h1{
+  color: #003333;
+  font-family:'Permanent Marker', cursive;
+
 }
+/*Side Navbar*/
+/*aside container*/
+
+aside {
+  position: absolute;
+  float: right;
+  width: 28%;
+  height: 850px;
+  right: 0;
+  background-color: mediumspringgreen;
+  padding-top: 20px;
+}
+
 aside ul {
   list-style-type: none;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 14px;
+  line-height: 15px;
   }
-/*BLock Quote for Donation Page*/
-blockquote {
-        display: block;
-        margin-top: 0px;
-        margin-bottom: 1px;
-        margin-left: 1px;
-        margin-right: 1px;
+
+  aside li{
+    padding: 20px;
+  }
+
+  aside img{
+    box-shadow: lightslategray;
+    text-align: center;
+  }
+
+span {
         font-family: 'Open Sans Condensed', sans-serif;
-        font-style: italic;
+        color: #ba202e;
+        font-style: bold;
         padding: 1px;
       }
-footer {
-    clear: both;
-    position: bottom;
-    left: 0;
-    bottom:1px;
-    width: 100%;
-    height:50px;
-    border-top: 2px solid;
-    border-color: #ba202e;
-    text-align: center;
+
+/*Main Section*/
+section{
+  width: 75%;
+  background-color: mediumorchid;
+  border-bottom: #ba202e;
+  position: absolute;
+  float:left;
+}
+section h2{
+  font-family: 'Amatic SC', cursive;
+    color: #ba202e;
+    font-size: 25px;
+}
+
+article p {
+  font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 14px;
+    color: #020202;
+    text-align: left;
+    width:70%;
+    display: inline-block;
+}
+#art_img{
+  display: inline;
+  width:10%;
+}
+
+/*Slideshow*/
+
+.mySlides{
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+.Container {
+  max-width: 400px;
+  background-color: black;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+.Slider_pics {
+  background-color: white;
+  width: 100%;
+  display: inline-block;
+  display: none;
+}
+
+button {
+  position: absolute;
+}
+
+.next {
+  right: 5px;
+}
+
+.prev {
+  left: 5px;
+}
+
+
+
+ footer{
+  padding: 1px;
+  line-height: 25px;
+  background-image: url('/Images/yellow.jpg') width='977.6' height='57.6';
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 2px solid;
+  border-color: #ba202e;
+  text-align: center;
  }
+
+
  footer ul {
   list-style-type:none;
   margin: 1px;
-
+  font-family: 'Quicksand', sans-serif;
+  font-size: 12px;
+  color: lightslategray;
 }
-
-
-/*slider
-      .slider-holder{
-            width: 100%;
-            height: 100px;
-            background-image:image;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 0px;
-            text-align: center;
-            overflow: hidden;
-        }
-        .image-holder{
-            width: 80%;
-            background-color: rgb(230, 225, 225);
-            margin-top:1px;
-            margin-bottom: 1px;
-            height: 98px;
-            clear: both;
-            position: relative;
-            -webkit-transition: left 2s;
-            -moz-transition: left 2s;
-            -o-transition: left 2s;
-            transition: left 2s;
-        }
-       
-        .slider-image
-        {
-            float: center;
-            margin: 5px;
-            padding: 1px;
-        }
-       
-        #slider-image-1:target ~ .image-holder
-        {
-            left: 0px;
-        }
-       
-        #slider-image-2:target ~ .image-holder
-        {
-            left: -800px;
-        }
-       
-       {
-            left: -1600px;
-        }
-       
-        .button-holder
-        {
-            position: relative;
-            top:10px;
-        }
-        .slider-change
-        {
-            display: inline-block;
-            position: relative;
-            height: 10px;
-            width: 10px;
-            border-radius: 5px;
-            background-color: brown;
-        }  
  /*Forms*/
 input[type=text] 
 {
