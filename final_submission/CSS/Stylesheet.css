@@ -1,7 +1,4 @@
 /* Layout */
-section, aside, nav {
-  padding: 5px;
-}
 
 body{
   margin: 0;
@@ -19,27 +16,30 @@ header {
 
 #logo {
   display: inline-block;
-  width: 30%;
+  width: 25%;
 }
 
-.pageName {
-  color: #ba202e;
-  font-family: 'Ubuntu', sans-serif;
-  font-style: italic;
-  text-align: right;
-  display:inline-block;
-} 
+#Zap{
+  display: inline-block;
+  font-family: 'Permanent Marker', cursive;
+  font-style: oblique;
+  color: #003333;
+  font-size: 40px;
+  letter-spacing: 7px;
+  padding-block: 30px;
+  
+}
 
 .pageName ul{
   list-style-type: none;
 }
 
-.pageName h1{
-  color: #003333;
-  font-family:'Permanent Marker', cursive;
-  font-size: 30px;
-  text-align:left;
-}
+.pageName {
+  color: #ba202e;
+  font-family: 'Amatic SC', cursive;
+  font-size: 20px;
+  float: right;
+} 
 
 /*Side Navbar*/
 /*aside container*/
@@ -47,17 +47,18 @@ header {
 aside {
   position: absolute;
   float: right;
-  width: 28%;
-  height: 850px;
+  background-image: url("../Images/section\ background.jpg");
+  background-repeat: repeat;
+  width: 29%;
+  height: 100%;
   right: 0;
-  background-color: mediumspringgreen;
   padding-top: 20px;
 }
 
 aside ul {
   list-style-type: none;
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 15px;
   }
 
@@ -80,10 +81,8 @@ span {
 /*Main Section*/
 section{
   width: 70%;
-  background-color: mediumorchid;
   border-bottom: #ba202e;
-  position: absolute;
-  float:left;
+
 }
 section h2{
   font-family: 'Amatic SC', cursive;
@@ -100,55 +99,71 @@ article p {
     display: inline-block;
 }
 #art_img{
+
   display: inline;
+  padding: 1px 1px;
+  text-align: center;
 }
 
 /*Slideshow*/
-
-.mySlides{
-  display: none;
-  width: 100%;
-  height: auto;
+.slideshow{
+  width: 70%;
+  height: 450px;
+  background-image: url("../Images/Theme\ nordwood.jpg");
 }
 
-.Container {
-  max-width: 400px;
-  background-color: black;
+.container {
   margin: 0 auto;
   text-align: center;
-  position: relative;
-}
-.Slider_pics {
-  background-color: white;
-  width: 100%;
   display: inline-block;
-  display: none;
+  width: 70%;
+  height: 370px;
 }
 
-button {
-  position: absolute;
+.slidePics{
+  display: inline;
+  list-style: none;
+  position: relative;
 }
 
 .next {
-  right: 5px;
+  font-family: 'Amatic', cursive;
+  color: #ba202e;
+  background-color: aliceblue;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  position: relative;
 }
 
 .prev {
-  left: 5px;
+  left: 0px;
+  font-family: 'Amatic', cursive;
+  color: #ba202e;
+  background-color: aliceblue;
+  border-radius: 3px 0 0 3px;
+  position: relative;
 }
 
-
+/*Footer*/
 
  footer{
+  clear: all;
   padding: 1px;
   line-height: 25px;
-  background-image: url('/Images/yellow.jpg') width='977.6' height='57.6';
   position: fixed;
   bottom: 0;
   width: 100%;
   border-top: 2px solid;
   border-color: #ba202e;
   text-align: center;
+ }
+
+ .back {
+  background-image: url("../Images/section\ background.jpg");
+  background-repeat: round;
+  width: 900px;
+  height:57.6px;
+  background-position: 100vw;
  }
 
 
