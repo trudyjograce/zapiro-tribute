@@ -1,7 +1,7 @@
 /* Layout */
 
 body{
-  margin: 0;
+  margin: 1px;
   border: 1px;
   padding: 1px;
 }
@@ -146,6 +146,29 @@ article p {
   font-family: 'Amatic', cursive;
   color: #ba202e;
   background-color: aliceblue;
+}
+/*Area: Call to Action*/
+.CalltoAction{
+  margin: 0;
+  width:100%;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#CFP {
+  float: left;
+  text-align: center;
+}
+
+area p{
+  font-size: 14px;
+  text-align: justify;
+  line-height: 15px;
+}
+
+h4 {
+  color: #138bc7;
+  font-size: 20px;
+  letter-spacing: 3px;
 }
 
 /*Footer*/
