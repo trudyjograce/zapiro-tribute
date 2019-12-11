@@ -10,26 +10,26 @@ body{
 header {
   border-bottom: 2px solid;
   border-color: #ba202e;
-  padding: 5px 10px;
+  padding: 5px 5%;
   height: 150px;
 }
 
 #logo {
-  display: inline-block;
-  width: 170px;
+  float: left;
+  width: 30%;
   height:170px;
 }
 
 #Zap{
-  display: inline-block;
+  width:30%;
   font-family: 'Permanent Marker', cursive;
   font-style: oblique;
   color: #363b3b;
   font-size: 40px;
   letter-spacing: 7px;
-  padding: 10px;
-  right: 1000px;
-  
+  text-align: center;
+  float: left;
+  margin: 0%;
 }
 
 .pageName ul{
@@ -37,9 +37,11 @@ header {
 }
 
 .pageName {
+  width: 30%;
   color: #ba202e;
   font-family: 'Amatic SC', cursive;
   font-size: 20px;
+  text-align: right;
   float: right;
 } 
 
@@ -52,7 +54,6 @@ aside {
   background-image: url("../Images/section\ background.jpg");
   background-repeat: repeat;
   width: 29%;
-  height: 100%;
   right: 0;
   padding-top: 20px;
 }
@@ -82,11 +83,12 @@ span {
 
 /*Main Section*/
 section{
+  background-image: url("../Images/Theme\ nordwood.jpg");
   width: 70%;
   border-bottom: #ba202e;
 
 }
-h2{
+section h2{
   font-family: 'Amatic SC', cursive;
     color: #ba202e;
     font-size: 25px;
@@ -98,10 +100,9 @@ article p {
     color: #020202;
     text-align: left;
     width:65%;
-    display: inline-block;
+    float:left;
 }
 #art_img{
-  display: inline;
   padding: 1px 1px;
   text-align: center;
 }
@@ -109,8 +110,6 @@ article p {
 /*Slideshow*/
 .slideshow{
   width: 70%;
-  height: 450px;
-  background-image: url("../Images/Theme\ nordwood.jpg");
 }
 
 .container {
@@ -146,11 +145,7 @@ article p {
 /*Footer*/
 
  footer{
-  clear: all;
-  padding: 1px;
   line-height: 25px;
-  position: fixed;
-  bottom: 0;
   width: 100%;
   border-top: 2px solid;
   border-color: #ba202e;
@@ -162,7 +157,6 @@ article p {
   background-repeat: round;
   width: 900px;
   height:57.6px;
-  background-position: 100vw;
  }
 
 
@@ -173,10 +167,20 @@ article p {
   font-size: 12px;
   color: lightslategray;
 }
+
+
  /*Forms*/
 
+ #form_h2{
+  font-family: 'Permanent Marker', cursive;
+  color: #ba202e;
+  font-size: 45px;
+  float: left;
+  width: 60%;
+}
+
  form {
-    width: 46%;
+    width: 40%;
     padding: 5px;
     margin: 5px 10px;
     font-family: 'Amatic';
@@ -184,39 +188,38 @@ article p {
     float:left;
   }
 
-  .form_h2{
-    font-family: 'Amatic SC', cursive;
-    color: #ba202e;
-    font-size: 50px;
-    float: right;
-}
-
 #commentBox{
   height: 100px;
   width:48%;
 }
 
-
-
 /*User Comment Box*/
 
 .commentContainer{
-  height: 100%;
-  width: 445px;
-  background-color: #363b3b;
+  width: 30%;
+  background-image: url("../Images/section\ background.jpg");
   float: right;
   top:0;
+ }
  
-}
-
-.userComments{
-  width: 48%;
-  height: 80%;
-  padding-top:30px; font-family: 'Amatic SC', cursive;
+ aside h3{
+  padding-top:10px; 
+  font-family: 'Amatic SC', cursive;
   color: #ba202e;
   font-size: 50px;
   text-align: center;
-  /*background-image: url("../Images/section\ background.jpg");*/
+ }
+
+.userComments{
+  border: 2px solid;
+  border-color: #ba202e;
+  width: 440;
+  height: 80%;
+}
+
+#conPic{
+  width:10%;
+  float:left;
 
 }
   
