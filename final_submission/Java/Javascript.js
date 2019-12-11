@@ -1,37 +1,58 @@
-//Slideshow Function
 
-//Buttons
+//cookies
+alert("This site uses cookies. By clicking OK you accept")
 
-var wordElement = ["pizza","teddy","milk","cocoa"]
-function clicked(){
-    console.log("I got this")
-}
+//slideshow
 
-//Applying functions to specific HTML elements
+var img = 0; var path = ["cartoon1.jpeg","cartoon2.jpeg","cartoon3.jpeg"]; 
 
-let wordP = document.getElementById("wordElement")
-console.log(wordP)
+// LIST OF IMAGES 
+path[0] = "cartoon1.jpeg"; 
+path[1] = "cartoon2.jpeg"; 
+path[2] = "cartoon3.jpeg"; 
 
-let displayWords = wordP.innerHTML
-console.log(displayWords)
+function next(){
+document.getElementsByClassName()
 
-//Indexing
-function clicked(){
-   wordP.innerHTML= wordElement[3] //"Keep trying" 
-}
 
-let wordCounter = 0
-wordP.innerHTML = wordElement[wordCounter]
 
-function clicked(){
-    if (wordCounter>wordElement.length){
-        wordcounter=0
-    }
-    {wordCounter++
-    wordP.innerHTML = wordElement[wordCounter]}
-}
-console.log(wordCounter)
 
-//Buttons for PICs
+document.slide.src = path[img]; 
 
-var pics =[""]
+if(img < path.length - 1) img++; 
+else img = 0; 
+setTimeout("swapImage()",3000); 
+} 
+window.onload=swapImage; 
+
+
+
+
+
+
+
+
+
+//Contact Page Comment
+
+//ref: <body>  
+//   <div class="info">
+// <label for="example">Enter Text
+//    </label>
+//    <input id="example" type="text"
+//           name="Ntext" size="20">
+//    <input id="sent" type="submit"  
+//           value="Send"> 
+//</div>
+//  <p id="para">      
+//  </p>
+
+    window.onclick = function(e){
+                var id =  e.target.id;   
+                if (id === 'sent'){
+                var txt = document.getElementById('commentBox').value    
+                 $( "#para" ).empty().append( txt );
+                }
+             }
+
+            
