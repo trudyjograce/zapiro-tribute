@@ -11,13 +11,13 @@ header {
   border-bottom: 2px solid;
   border-color: #ba202e;
   padding: 5px 5%;
-  height: 150px;
+  height: 160px;
 }
 
 #logo {
   float: left;
   width: 30%;
-  height:170px;
+  height:160px;
 }
 
 #Zap{
@@ -62,7 +62,7 @@ aside ul {
   list-style-type: none;
   font-family: 'Ubuntu', sans-serif;
   font-size: 18px;
-  line-height: 18px;
+  line-height: 20px;
   }
 
   aside li{
@@ -78,7 +78,7 @@ span {
         font-family: 'Open Sans Condensed', sans-serif;
         color: #ba202e;
         font-style: bold;
-        font-size: 20px;
+        font-size: 25px;
         padding: 1px;
         
       }
@@ -116,38 +116,50 @@ article p {
 #slideH2{
   font-family:'Amatic SC', cursive;
   color: #ba202e;
-  font-size: 30px;
+  font-size: 25px;
+  font-weight: bolder;
   text-align: center;
   margin: 0%;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .container {
-  margin: 0 auto;
-  text-align: center;
-  width: 70%;
-}
-
-.slidePics{
-  display: inline;
-  list-style: none;
   position: relative;
-  padding: 5px;
 }
 
+.mySlides {
+  display: none;
+  text-align: center;  
+}
+
+/* Next & previous buttons */
+.prev,
 .next {
-  font-family: 'Amatic', cursive;
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
   color: #ba202e;
-  background-color: aliceblue;
-  right: 0;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
-.prev {
-  left: 0px;
-  font-family: 'Amatic', cursive;
-  color: #ba202e;
-  background-color: aliceblue;
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
+
 /*Area: Call to Action*/
+
 .CalltoAction{
   margin: 0;
   width:100%;
@@ -167,7 +179,7 @@ area p{
 
 h4 {
   color: #138bc7;
-  font-size: 20px;
+  font-size: 25px;
   letter-spacing: 3px;
 }
 
@@ -219,13 +231,12 @@ h4 {
 
 #commentBox{
   height: 100px;
-  width:48%;
 }
 
 /*User Comment Box*/
 
 .commentContainer{
-  width: 30%;
+  width: 40%;
   background-image: url("../Images/section\ background.jpg");
   float: right;
   top:0;
@@ -242,8 +253,7 @@ h4 {
 .userComments{
   border: 2px solid;
   border-color: #ba202e;
-  width: 440;
-  height: 80%;
+  width: 40%;
 }
 
 #conPic{
