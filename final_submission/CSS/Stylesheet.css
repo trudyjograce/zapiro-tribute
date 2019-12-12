@@ -257,12 +257,11 @@ h4 {
 
 /*User Comment Box*/
 
-.commentContainer{
-  width: 40%;
+#txtbox {
+  width: 80%;
   background-image: url("../Images/section\ background.jpg");
   background-repeat: round;
-  float: right;
-  top:0;
+  margin-top: 30px;
   margin-right: 3px;
  }
  
@@ -270,7 +269,7 @@ h4 {
   padding-top:10px; 
   font-family: 'Amatic SC', cursive;
   color: #ba202e;
-  font-size: 50px;
+  font-size: 30px;
   text-align: center;
  }
 
@@ -279,7 +278,6 @@ h4 {
   border-color: #ba202e;
   width: 38%;
   line-height: 18px;
-  text-overflow: ellipsis;
 }
 
 #conPic{

@@ -38,7 +38,9 @@
     Comment:<br>
       <input id = "commentBox" type="text" Comment="comment">
       <br><br>
-        <input id ="submit" input type="submit" formaction="userComments" value="Submit">
+        <input id ="submit" input type="submit" onsubmit="submit()">
+
+        <!--formaction="/contactPage.html"-->
 
       <p>Your voice is important. By clicking submit you will be heard</p>
   
@@ -46,9 +48,9 @@
 </form> 
 
 <aside>
-    <div id = "commentContainer">
+    <div id = "txtbox">
        <h3>Your Comments</h3>
-          <p id = "userComments"> </p>
+          <p id = "userComments">User Comments go Here</p>
       </div>
 </aside>
 

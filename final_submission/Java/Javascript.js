@@ -31,13 +31,12 @@ function click(){
 //Contact Page Comment
 
 //Get the url for where the data will come from
-//var comdata = document.getElementById("commentBox").innerHTML
-//let userComments ={}
+var comdata = document.getElementById("commentBox").innerHTML
+let userComments =[]
 
-//function submit(){
-//  comdata.push(userComments)
-//}
-//console.log(comdata);
-//console.log(userComments)
+function submit(){
+      comdata.push(userComments)
+}
+
 
             
