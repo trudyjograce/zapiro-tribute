@@ -1,9 +1,9 @@
 /* Layout */
 
 body{
-  margin: 1px;
-  border: 1px;
-  padding: 1px;
+  margin: 10px;
+  border: 5px;
+  padding: 2px;
 }
 
 /* Header/Logo/Title */
@@ -18,6 +18,10 @@ header {
   float: left;
   width: 30%;
   height:160px;
+}
+
+h1 {
+  margin:0;
 }
 
 #Zap{
@@ -40,6 +44,8 @@ header {
   width: 30%;
   color: #ba202e;
   font-family: 'Amatic SC', cursive;
+  text-shadow: 1px 1px 1px  #363b3b;
+  letter-spacing: 1px;
   font-size: 20px;
   text-align: right;
   float: right;
@@ -50,17 +56,16 @@ header {
 
 aside {
   position: absolute;
-  float: right;
+  right: 0;
   background-image: url("../Images/section\ background.jpg");
   background-repeat: repeat;
-  width: 29%;
-  right: 0;
-  padding-top: 20px;
+  width: 20%;
 }
 
 aside ul {
   list-style-type: none;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-style: italic;
   font-size: 18px;
   line-height: 20px;
   }
@@ -69,9 +74,9 @@ aside ul {
     padding: 20px;
   }
 
-  aside img{
-    box-shadow: lightslategray;
-    text-align: center;
+  aside a{
+    text-decoration: none;
+    color: #363b3b;
   }
 
 span {
@@ -83,27 +88,37 @@ span {
         
       }
 
+.icons{
+  border-radius: 0%;
+}
+
 /*Main Section*/
 section{
   background-image: url("../Images/Theme\ nordwood.jpg");
+  background-repeat: round;
   width: 70%;
   border-bottom: #ba202e;
+ 
 }
 
 #artID{
+  display: block;
   font-family:'Amatic SC', cursive;
   color: #ba202e;
   font-size: 30px;
-  position: absolute;
+  text-shadow: 1px 1px 1px  #363b3b;
+  letter-spacing: 2px;
+  margin: 10px 5px;
 }
 
 article p {
+  padding: 5px;
   font-family: 'Ubuntu', sans-serif;
-    font-size: 14px;
-    color: #020202;
-    text-align: justify;
-    width:65%;
-    float:left;
+  font-size: 14px;
+  color: #020202;
+  text-align: justify;
+  width:60%;
+  float:left;
 }
 
 #art_img{
@@ -112,14 +127,21 @@ article p {
 }
 
 /*Slideshow*/
+.slideshow{
+  display: inline-block;
+  width: 78%;
+
+}
 
 #slideH2{
   font-family:'Amatic SC', cursive;
+  letter-spacing: 3px;
   color: #ba202e;
   font-size: 25px;
   font-weight: bolder;
   text-align: center;
-  margin: 0%;
+  text-shadow: 1px 1px 1px  #363b3b;
+  margin: 5px;
 }
 
 * {
@@ -162,13 +184,14 @@ article p {
 
 .CalltoAction{
   margin: 0;
-  width:100%;
+  width:79%;
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
 #CFP {
   float: left;
   text-align: center;
+  border-radius: 0%;
 }
 
 area p{
@@ -181,6 +204,8 @@ h4 {
   color: #138bc7;
   font-size: 25px;
   letter-spacing: 3px;
+  text-shadow: 1px 1px 1px #363b3b;
+  margin: 10px 10px;
 }
 
 /*Footer*/
@@ -238,8 +263,10 @@ h4 {
 .commentContainer{
   width: 40%;
   background-image: url("../Images/section\ background.jpg");
+  background-repeat: round;
   float: right;
   top:0;
+  margin-right: 3px;
  }
  
  aside h3{
@@ -253,7 +280,9 @@ h4 {
 .userComments{
   border: 2px solid;
   border-color: #ba202e;
-  width: 40%;
+  width: 38%;
+  line-height: 18px;
+  text-overflow: ellipsis;
 }
 
 #conPic{
