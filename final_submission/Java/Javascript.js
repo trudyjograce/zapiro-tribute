@@ -37,7 +37,7 @@ alert("This site uses cookies. By clicking OK you accept")
 
 //Get the url for where the data will come from
 var comdata = document.getElementById("commentBox").innerHTML
-userComments =[]
+let userComments ={}
 
 function submit(){
   comdata.push(userComments)
