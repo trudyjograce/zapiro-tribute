@@ -3,7 +3,7 @@
 body{
   margin: 10px;
   border: 5px;
-  padding: 2px;
+  padding: 8px;
 }
 
 /* Header/Logo/Title */
@@ -85,7 +85,6 @@ span {
         font-style: bold;
         font-size: 25px;
         padding: 1px;
-        
       }
 
 .icons{
@@ -96,7 +95,7 @@ span {
 section{
   background-image: url("../Images/Theme\ nordwood.jpg");
   background-repeat: round;
-  width: 70%;
+  width: 80%;
   border-bottom: #ba202e;
  
 }
@@ -129,7 +128,7 @@ article p {
 /*Slideshow*/
 .slideshow{
   display: inline-block;
-  width: 78%;
+  width: 80%;
 
 }
 
@@ -152,14 +151,13 @@ article p {
   position: relative;
 }
 
-#mySlides {
+#imagetest {
   display: block;
-  text-align: center;  
+  margin: auto;  
 }
 
 /* Next & previous buttons */
-.prev,
-.next {
+#picButton, #picButton1{
   cursor: pointer;
   position: absolute;
   top: 40%;
@@ -175,7 +173,7 @@ article p {
 }
 
 /* Position the "next button" to the right */
-.next {
+#picButton1 {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
@@ -235,10 +233,21 @@ h4 {
 }
 
 
- /*Forms*/
+ /*Contact Page - Forms*/
+
+ #contsec{
+   width:30%;
+   float: left;
+   font-family: 'Open Sans Condensed', sans-serif;
+   color: #ba202e;
+   text-shadow: 1px 1px 1px  #363b3b;
+   letter-spacing: 1px;
+ }
 
  #form_h2{
   font-family: 'Permanent Marker', cursive;
+  text-shadow: 1px 1px 1px  #363b3b;
+  letter-spacing: 1px;
   color: #ba202e;
   font-size: 45px;
   float: left;

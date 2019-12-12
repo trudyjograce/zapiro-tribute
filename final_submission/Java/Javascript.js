@@ -4,17 +4,19 @@ alert("This site uses cookies. By clicking OK you accept")
 
 //slideshow
 //code with coaching
-var images =["Images/cartoon1.jpg",
-            "Images/cartoon2.jpg",
-            "Images/cartoon3.jpg"]
 
 // Getting image tag from the DOM
 let imgElement = document.getElementById("imagetest");
 let imgCounter = 0;
 
 //Attributes can be manipulated on JS for the elements
+var images = ["Images/cartoon1.jpg",
+              "Images/cartoon2.jpg",
+              "Images/cartoon3.jpg"];
 
 imgElement.src = images[imgCounter];
+
+//Next & Prev buttons
 
 function prev(){
       if(imgCounter > images.length){
@@ -32,7 +34,7 @@ function next(){
             imgCounter = 0;} 
             else {
           imgCounter++;
-        if (imgCounter < images.length){
+        if (imgCounter > images.length){
             imgElement.src = images[imgCounter];
           }
         }
