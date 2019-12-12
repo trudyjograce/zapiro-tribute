@@ -3,47 +3,52 @@
 alert("This site uses cookies. By clicking OK you accept")
 
 //slideshow
-//THIS IS NOT MY CODE :(
+//code with coaching
+var images =["Images/cartoon1.jpg",
+            "Images/cartoon2.jpg",
+            "Images/cartoon3.jpg"]
 
-var slideIndex = 1;
-showSlides(slideIndex);
+// Getting image tag from the DOM
+let imgElement = document.getElementById("imagetest");
+let imgCounter = 0;
 
-Next/previous controls
-function plusSlides(n) {
-showSlides(slideIndex += n);}
+//Attributes can be manipulated on JS for the elements
 
-Thumbnail image controls
-function currentSlide(n) {
-showSlides(slideIndex = n);}
+imgElement.src = images[imgCounter];
 
-function showSlides(n) {
-var i;
-var slides = document.getElementsByClassName("mySlides");
-var dots = document.getElementsByClassName("demo");
-var captionText = document.getElementById("caption");
-if (n > slides.length) {slideIndex = 1}
-if (n < 1) {slideIndex = slides.length}
-for (i = 0; i < slides.length; i++) {
-slides[i].style.display = "none";
+function prev(){
+      if(imgCounter > images.length){
+      imgCounter = 0;
+      } else {
+        imgCounter++;
+      if (imgCounter < images.length){
+          imgElement.src = images[imgCounter];
+    }
+  }
 }
-for (i = 0; i < dots.length; i++) {
- dots[i].className = dots[i].className.replace(" active", "");
-}
-slides[slideIndex-1].style.display = "block";
-dots[slideIndex-1].className += " active";
-captionText.innerHTML = dots[slideIndex-1].alt;}
+
+function next(){
+          if(imgCounter < images.length){
+            imgCounter = 0;} 
+            else {
+          imgCounter++;
+        if (imgCounter < images.length){
+            imgElement.src = images[imgCounter];
+          }
+        }
+      }
  
 
 //Contact Page Comment
 
 //Get the url for where the data will come from
-var comdata = document.getElementById("commentBox").innerHTML
-let userComments ={}
+//var comdata = document.getElementById("commentBox").innerHTML
+//let userComments ={}
 
-function submit(){
-  comdata.push(userComments)
-}
-console.log(comdata);
-console.log(userComments)
+//function submit(){
+//  comdata.push(userComments)
+//}
+//console.log(comdata);
+//console.log(userComments)
 
             

@@ -152,8 +152,8 @@ article p {
   position: relative;
 }
 
-.mySlides {
-  display: none;
+#mySlides {
+  display: block;
   text-align: center;  
 }
 
