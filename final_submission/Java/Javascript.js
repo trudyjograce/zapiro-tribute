@@ -14,11 +14,9 @@ var images = ["Images/cartoon1.jpg",
               "Images/cartoon2.jpg",
               "Images/cartoon3.jpg"];
 
-imgElement.src = images[imgCounter];
-
 //Next & Prev buttons
 
-function prev(){
+function click(){
       if(imgCounter > images.length){
       imgCounter = 0;
       } else {
@@ -28,17 +26,6 @@ function prev(){
     }
   }
 }
-
-function next(){
-          if(imgCounter < images.length){
-            imgCounter = 0;} 
-            else {
-          imgCounter++;
-        if (imgCounter > images.length){
-            imgElement.src = images[imgCounter];
-          }
-        }
-      }
  
 
 //Contact Page Comment

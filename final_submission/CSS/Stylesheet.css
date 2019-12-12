@@ -156,25 +156,13 @@ article p {
   margin: auto;  
 }
 
-/* Next & previous buttons */
-#picButton, #picButton1{
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: #ba202e;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
+/* Button */
 
-/* Position the "next button" to the right */
-#picButton1 {
-  right: 0;
+#picButton {
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #ba202e;
+  display: flow-root;
+  margin: auto;
   border-radius: 3px 0 0 3px;
 }
 
