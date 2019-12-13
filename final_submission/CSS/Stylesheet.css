@@ -230,14 +230,16 @@ h4 {
    color: #ba202e;
    text-shadow: 1px 1px 1px  #363b3b;
    letter-spacing: 1px;
+   padding: 10px
  }
 
  #form_h2{
   font-family: 'Permanent Marker', cursive;
-  text-shadow: 1px 1px 1px  #363b3b;
+  text-shadow: 2px 1px 1px  #363b3b;
   letter-spacing: 1px;
   color: #ba202e;
   font-size: 45px;
+  margin-top: 10px;
   float: left;
   width: 60%;
 }
@@ -262,7 +264,8 @@ h4 {
   background-image: url("../Images/section\ background.jpg");
   background-repeat: round;
   margin-top: 30px;
-  margin-right: 3px;
+  margin: 10px;
+  padding: 5px;
  }
  
  aside h3{
