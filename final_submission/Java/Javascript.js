@@ -1,6 +1,6 @@
 
 //cookies
-alert("This site uses cookies. By clicking OK you accept")
+alert("This site uses cookies. By clicking OK you accept");
 
 //slideshow
 //code with coaching
@@ -22,8 +22,8 @@ let imgCounter = 0;
 imgElement.src = images[imgCounter];
 
 //Next & Prev buttons
-
-function click(){
+// click is probably an internal func
+function clicked(){
       if(imgCounter > images.length){
       imgCounter = 0;
       } else {
@@ -35,15 +35,16 @@ function click(){
 }
  
 
+
 //Contact Page Comment
 
 //Get the url for where the data will come from
-var comdata = document.getElementById("commentBox").innerHTML
-let userComments =[]
+//var comdata = document.getElementById("commentBox").innerHTML
+//let userComments =[]
 
 //On SUbmit
-function submit(){
-    comdata.push(userComments)}
+//function submit(){
+//   comdata.push(userComments)}
 
 
             
